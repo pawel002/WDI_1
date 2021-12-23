@@ -109,4 +109,3 @@ A.add(17)
 A.add(18)
 n = sort_by_last_digit(A.first)
 node_printer(n)
-a = 1
