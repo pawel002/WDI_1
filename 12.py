@@ -1,3 +1,4 @@
+# NOT FINISHED
 class Node:
 
     def __init__(self, x=None):
@@ -14,6 +15,7 @@ def pow_change(head, st):
         if p.val == st:
             return True
     return False
+
 
 A = Node("asd")
 A.next = Node("adsa")
