@@ -105,7 +105,6 @@ def add(head1: Node, head2: Node):
     return reverse(Tail.next)
 
 
-
 n = Number()
 n.set(99)
 m = Number()
