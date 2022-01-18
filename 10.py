@@ -1,4 +1,3 @@
-# NOT DONE
 class Node:
 
     def __init__(self, x=None):
@@ -23,22 +22,6 @@ class Number:
                 tail.next = temp
             tail = temp
         self.first = head
-
-    # Ans to 9
-    def add1(self):
-        self.reverse()
-        p = self.first
-        remainder = 1
-        while p is not None:
-            if remainder == 0:
-                self.reverse()
-                return
-            p.val, remainder = (p.val + remainder) % 10, (remainder + p.val) // 10
-            if p.next is None:
-                p.next = Node(1)
-                break
-            p = p.next
-        self.reverse()
 
     def reverse(self):
         prev = None
@@ -97,7 +80,7 @@ def add(head1: Node, head2: Node):
         remainder = (tail1.val + remainder) // 10
         tail, tail1 = tail.next, tail1.next
     while tail2:
-        tail.next = Node((tail2 + remainder) % 10)
+        tail.next = Node((tail2.val + remainder) % 10)
         remainder = (tail2.val + remainder) // 10
         tail, tail2 = tail.next, tail2.next
     if remainder != 0:
@@ -106,8 +89,8 @@ def add(head1: Node, head2: Node):
 
 
 n = Number()
-n.set(99)
+n.set(9999)
 m = Number()
-m.set(1)
+m.set(1423)
 node_printer(add(n.first, m.first))
 
