@@ -96,7 +96,6 @@ def reverse2(head: Node):
     return prev
 
 
-
 A = arr()
 A.add(12)
 A.add(15)
