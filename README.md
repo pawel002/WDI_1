@@ -1,2 +1,2 @@
 # Introduction to CS 
-Solutions to excercisses from Introduction to CS
+Solutions to excercises from Introduction to CS
